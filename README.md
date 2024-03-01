@@ -9,10 +9,9 @@ O backend utiliza as seguintes tecnologias
 ## [NGINX](https://www.nginx.com)
 <img src="https://1.bp.blogspot.com/-7BqYl5lhvBg/Wh-p4mABnYI/AAAAAAAABGI/nhlUdr-AvaQ4M4P8yRyEwWbZ9R4ulEdQgCLcBGAs/s1600/NGINX_logo_rgb-01.png" alt="drawing" width="300"/>
 
-## [Bun.sh](https://bun.sh) + [Fastify](https://fastify.dev)
+## [Bun.sh](https://bun.sh)
 <div style="flex-direction: row;">
     <img src="https://bun.sh/logo.svg" alt="drawing" width="200"/>
-    <img src="https://www.fastify.cn/images/fastify-logo-inverted.2180cc6b1919d47a.png" alt="drawing" width="400"/> 
 </div>
 
 ## [SQLite 3]()
