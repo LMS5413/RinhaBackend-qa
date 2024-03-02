@@ -16,7 +16,7 @@ export class BankModule {
           this.sqlite.exec("PRAGMA journal_mode = WAL;");
           this.sqlite.exec("PRAGMA busy_timeout = 30000;");
           this.sqlite.exec("PRAGMA optimize;");
-          this.sqlite.exec("PRAGMA synchronous = 1;");
+          this.sqlite.exec("PRAGMA synchronous = 0;");
           this.sqlite.exec("PRAGMA temp_store = 1;");
 
           this.sqlite.exec(readFileSync("./config/schema.sql", "utf-8"));

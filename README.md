@@ -53,4 +53,4 @@ NUMA:
 
 # Resultados:
 
-<img src="https://i.imgur.com/BzfF8GK.png" width=700>
+<img src="https://i.imgur.com/8I5Zcgs.png" width=700>

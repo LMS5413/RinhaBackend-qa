@@ -3,9 +3,7 @@ version: "3.8"
 services:
   api01: &api
     hostname: api01
-    build: 
-      context: .
-      dockerfile: Dockerfile
+    image: docker.io/lms5413/rinhabackendqa:latest
     volumes:
       - database-volume:/usr/src/app/data
     environment:
