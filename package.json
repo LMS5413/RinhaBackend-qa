@@ -2,6 +2,7 @@
   "name": "rinhabackend2024",
   "module": "index.ts",
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.9",
     "@types/bun": "latest"
   },
   "peerDependencies": {

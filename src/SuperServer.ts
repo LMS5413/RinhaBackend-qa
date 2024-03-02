@@ -9,6 +9,7 @@ export class SuperServer {
 
     Bun.serve({
       port: parseInt(process.env.PORT ?? "3000"),
+      lowMemoryMode: true,
       async fetch(req) {
         const uri = new URL(req.url);
         if (uri.pathname.startsWith("/clientes")) {
@@ -47,7 +48,7 @@ export class SuperServer {
                 status: 422
               });
             }
-            const { valor, tipo, descricao } = JSON.parse(decoder.decode((await req.body.getReader().read()).value))
+            const { valor, tipo, descricao } = JSON.parse(decoder.decode((await req.body.getReader().read()).value));
 
             if (!valor || !tipo || !descricao) {
               return new Response(null, {
@@ -80,7 +81,7 @@ export class SuperServer {
               });
             }
 
-            const clienteInfo = SuperServer.bancoModule.getCustomer(id, false);
+            let clienteInfo = SuperServer.bancoModule.getCustomer(id, false);
             if (!clienteInfo) return new Response(null, {
               status: 404
             });
