@@ -14,7 +14,7 @@ O backend utiliza as seguintes tecnologias
     <img src="https://bun.sh/logo.svg" alt="drawing" width="200"/>
 </div>
 
-## [SQLite 3]()
+## [SQLite 3](https://www.sqlite.org/)
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SQLite370.svg/2560px-SQLite370.svg.png" alt="drawing" width="300"/>
 
 #
@@ -53,4 +53,4 @@ NUMA:
 
 # Resultados:
 
-<img src="https://i.imgur.com/8I5Zcgs.png" width=700>
+<img src="https://i.imgur.com/yEMbQaK.png" width=700>
