@@ -1,10 +1,11 @@
 import { BankModule } from "./modules/BankModule";
-import { Unit8ArrayToString } from "./utils/Unit8ArrayToString";
 
 export class SuperServer {
   private static bancoModule = new BankModule();
 
   public async start() {
+
+    const decoder = new TextDecoder();
 
     Bun.serve({
       port: parseInt(process.env.PORT ?? "3000"),
@@ -46,7 +47,7 @@ export class SuperServer {
                 status: 422
               });
             }
-            const { valor, tipo, descricao } = JSON.parse(Unit8ArrayToString((await req.body.getReader().read()).value!!));
+            const { valor, tipo, descricao } = JSON.parse(decoder.decode((await req.body.getReader().read()).value))
 
             if (!valor || !tipo || !descricao) {
               return new Response(null, {
@@ -118,5 +119,6 @@ export class SuperServer {
         });
       }
     });
+
   }
 }
