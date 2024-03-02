@@ -17,7 +17,7 @@ services:
       resources:
         limits:
           cpus: "0.6"
-          memory: "240MB"
+          memory: "245MB"
     networks:
       - default
 
@@ -35,7 +35,7 @@ services:
     deploy:
       resources:
         limits:
-          cpus: "0.17"
+          cpus: "0.30"
           memory: "10MB"
 networks:
   default:
